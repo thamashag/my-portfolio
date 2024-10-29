@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Healthier Living - Fitness App",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
+      "Healthier Living is a comprehensive fitness app concept designed to promote healthy living through a seamless user experience. The app prototype was fully designed in Figma, showcasing its key features, including personalized fitness tracking and wellness goals. I developed a complete business and marketing plan, alongside a go-to-market strategy, to prepare this app for launch. A high-fidelity prototype demonstrates user flows and functionality, aiming to provide an intuitive and engaging experience for users focused on fitness and wellness.",
     technologies: ["Figma"],
     image: HealthierLiving,
     codeLink: "https://github.com/your-repo",
@@ -18,13 +18,14 @@ const projects = [
   {
     title: "City of Melbourne - Chameleon Company - Open Data Playground",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
+      "Chameleon Open Data is a collaborative project focused on accessible data solutions. As part of a team, I contributed as a full stack developer to build out core components of the website and implemented a CI/CD pipeline using Jenkins. This pipeline was fully deployed to Google Cloud Platform (GCP), leveraging Terraform for resource management. My contributions ensured streamlined deployment and efficient infrastructure, enhancing project reliability and ease of maintenance.",
     technologies: [
       "Figma",
       "Next JS",
       "Tailwind CSS",
       "JavaScript",
       "Jenkins",
+      "Terraform",
       "GCP",
     ],
     image: Chameleon,
@@ -35,7 +36,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="w-full bg-[#4CC9FE] py-16 px-4" id="work">
+    <div className="w-full bg-[#37AFE1] py-16 px-4" id="work">
       <div className="max-w-[1240px] mx-auto">
         <h2 className="text-4xl font-bold text-[#FFFFFF] text-center mb-5 uppercase">
           Work
@@ -51,14 +52,16 @@ const Projects = () => {
               className="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow p-4"
             >
               {/* Project Image */}
-              <img
-                src={project.image}
-                alt={`${project.title} Screenshot`}
-                className="w-full md:w-[600px] h-[400px] overflow-hidden object-cover rounded-lg"
-              />
+              <div className="w-full md:w-1/2 lg:w-1/3">
+                <img
+                  src={project.image}
+                  alt={`${project.title} Screenshot`}
+                  className="object-cover w-full h-[400px] rounded-lg"
+                />
+              </div>
 
               {/* Project Content */}
-              <div className="p-6 flex flex-col justify-between">
+              <div className="p-4 md:w-1/2 lg:w-2/3 flex flex-col justify-between">
                 <div>
                   <h3 className="text-3xl font-semibold text-[#2E2E2E] mb-2">
                     {project.title}
@@ -86,7 +89,8 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-black hover:text-[#4CC9FE] transition"
                   >
-                    <FaGithub size={20} />
+                    <FaGithub className="text-2xl lg:text-4xl" />{" "}
+                    {/* Default 2xl and lg 3xl */}
                     Code
                   </a>
                   <a
@@ -95,7 +99,8 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-black hover:text-[#4CC9FE] transition"
                   >
-                    <FiExternalLink size={20} />
+                    <FiExternalLink className="text-2xl lg:text-4xl" />{" "}
+                    {/* Default 2xl and lg 3xl */}
                     Live demo
                   </a>
                 </div>

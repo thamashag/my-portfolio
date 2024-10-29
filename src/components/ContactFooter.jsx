@@ -24,7 +24,7 @@ const ContactAndFooter = () => {
               <FaEnvelope className="text-[#4CC9FE] text-3xl" />
             </div>
             <p className="mt-4 font-semibold">Mail</p>
-            <p className="text-gray-500">thamasha@example.com</p>
+            <p className="text-gray-500">galahenamthamasha@gmail.com</p>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import Profile from "../assets/about3.jpeg";
 const About = () => {
   return (
     <div id="about" className="w-full min-h-screen bg-[#F5F4B3] py-16 px-4">
-      <div className="max-w-[900px] mx-auto grid md:grid-cols-2 gap-8 items-center">
+      <div className="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-8 items-center">
         {/* Profile Image */}
         <img
           className="w-full max-w-[350px] md:max-w-[400px] lg:max-w-[500px] mx-auto rounded-lg shadow-lg"
@@ -20,26 +20,36 @@ const About = () => {
           <p className="text-base md:text-lg leading-relaxed text-gray-800">
             Hi there! I'm{" "}
             <span className="font-semibold">Thamasha Galahena</span>—or{" "}
-            <span className="font-semibold">Tam</span> for short—a passionate
+            <span className="font-semibold">Tam</span> for short—a dedicated
             full-stack developer and software engineer based in Melbourne,
-            Australia. I have a knack for building clean, efficient, and
-            scalable applications, whether it's for the web, mobile, or back-end
-            services.
-            <br />
-            <br />
-            With a strong foundation in{" "}
+            Australia, with a strong academic foundation from the Polytechnic
+            University of Turin and Deakin University. My expertise spans
+            front-end and back-end development, from building responsive,
+            user-focused applications in{" "}
             <span className="font-semibold">
-              JavaScript, React, Node.js,
+              JavaScript, React, and Node.js
             </span>{" "}
-            and <span className="font-semibold">Tailwind CSS</span>, I'm always
-            eager to explore new technologies and bring ideas to life. I thrive
-            in collaborative environments, value clean code, and love tackling
-            complex challenges with innovative solutions.
+            to deploying robust cloud-based services using{" "}
+            <span className="font-semibold">
+              Docker, Kubernetes, and Terraform
+            </span>
+            .
             <br />
             <br />
-            When I'm not coding, you might find me exploring Melbourne's coffee
-            scene, reading up on the latest tech trends, or honing my skills
-            through hackathons and personal projects.
+            Over the years, I've gained experience in various industries,
+            collaborating on impactful projects and leveraging CI/CD pipelines
+            and agile methodologies to deliver scalable solutions. My projects
+            include microservices architecture, CI/CD automation, and
+            data-driven analysis, where I thrive in collaborative settings and
+            focus on clean, efficient code.
+            <br />
+            <br />
+            Fluent in{" "}
+            <span className="font-semibold">English, Italian, and Sinhala</span>
+            , and having lived in three different countries, I bring a diverse
+            perspective to every team. When I'm not coding, you can find me
+            exploring Melbourne's coffee spots, diving into new tech trends, or
+            challenging myself with personal projects and hackathons.
           </p>
         </div>
       </div>
