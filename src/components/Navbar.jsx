@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import logo from "../assets/logo.png"; // Original logo
 import logoHover from "../assets/logo-hover.png"; // Alternate logo (different color)
@@ -14,53 +15,67 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
       {/* Logo with hover effect and redirect to home */}
-      <a href="#home" onClick={() => setNavOpen(false)}>
+      <Link to="/#home" onClick={() => setNavOpen(false)}>
         <img
-          src={isHovered ? logoHover : logo} // Change image based on hover state
+          src={isHovered ? logoHover : logo}
           alt="Logo"
           className="h-12 z-20"
-          onMouseEnter={() => setIsHovered(true)} // Set hover state to true
-          onMouseLeave={() => setIsHovered(false)} // Set hover state to false
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         />
-      </a>
+      </Link>
 
       {/* Desktop Navigation */}
       <ul className="hidden md:flex text-lg uppercase">
         <li className="p-4">
-          <a
-            href="#home"
+          <Link
+            smooth
+            to="/#home"
             className="hover:underline hover:underline-offset-4 transition duration-300"
             onClick={handleNavToggle}
           >
             Home
-          </a>
+          </Link>
         </li>
         <li className="p-4">
-          <a
-            href="#about"
+          <Link
+            smooth
+            to="/#about"
             className="hover:underline hover:underline-offset-4 transition duration-300"
             onClick={handleNavToggle}
           >
             About
-          </a>
+          </Link>
         </li>
         <li className="p-4">
-          <a
-            href="#work"
+          <Link
+            smooth
+            to="/#work"
             className="hover:underline hover:underline-offset-4 transition duration-300"
             onClick={handleNavToggle}
           >
             Work
-          </a>
+          </Link>
         </li>
         <li className="p-4">
-          <a
-            href="#contact"
+          <Link
+            smooth
+            to="/#blog"
+            className="hover:underline hover:underline-offset-4 transition duration-300"
+            onClick={handleNavToggle}
+          >
+            Blog
+          </Link>
+        </li>
+        <li className="p-4">
+          <Link
+            smooth
+            to="/#contact"
             className="hover:underline hover:underline-offset-4 transition duration-300"
             onClick={handleNavToggle}
           >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
 
@@ -77,40 +92,54 @@ const Navbar = () => {
       >
         <ul className="text-center text-2xl space-y-6">
           <li className="p-4">
-            <a
-              href="#home"
+            <Link
+              smooth
+              to="/#home"
               className="hover:underline hover:underline-offset-4 transition duration-300"
               onClick={handleNavToggle}
             >
               Home
-            </a>
+            </Link>
           </li>
           <li className="p-4">
-            <a
-              href="#about"
+            <Link
+              smooth
+              to="/#about"
               className="hover:underline hover:underline-offset-4 transition duration-300"
               onClick={handleNavToggle}
             >
               About
-            </a>
+            </Link>
           </li>
           <li className="p-4">
-            <a
-              href="#work"
+            <Link
+              smooth
+              to="/#work"
               className="hover:underline hover:underline-offset-4 transition duration-300"
               onClick={handleNavToggle}
             >
               Work
-            </a>
+            </Link>
           </li>
           <li className="p-4">
-            <a
-              href="#contact"
+            <Link
+              smooth
+              to="/#blog"
+              className="hover:underline hover:underline-offset-4 transition duration-300"
+              onClick={handleNavToggle}
+            >
+              Blog
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link
+              smooth
+              to="/#contact"
               className="hover:underline hover:underline-offset-4 transition duration-300"
               onClick={handleNavToggle}
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

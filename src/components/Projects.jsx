@@ -1,8 +1,9 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
-import HealthierLiving from "../assets/work1.png"; // Replace with actual project image paths
-import Chameleon from "../assets/work2.png"; // Replace with actual project image paths
+import HealthierLiving from "../assets/work1.png";
+import Chameleon from "../assets/work2.png";
+import SupplyChain from "../assets/work3.png";
 
 const projects = [
   {
@@ -11,10 +12,8 @@ const projects = [
       "Healthier Living is a comprehensive fitness app concept designed to promote healthy living through a seamless user experience. The app prototype was fully designed in Figma, showcasing its key features, including personalized fitness tracking and wellness goals. I developed a complete business and marketing plan, alongside a go-to-market strategy, to prepare this app for launch. A high-fidelity prototype demonstrates user flows and functionality, aiming to provide an intuitive and engaging experience for users focused on fitness and wellness.",
     technologies: ["Figma"],
     image: HealthierLiving,
-    codeLink: "https://github.com/your-repo",
-    liveDemoLink: "https://yourprojectlink.com",
+    designLink: "work/healthierliving", // Link to design showcase page
   },
-
   {
     title: "City of Melbourne - Chameleon Company - Open Data Playground",
     description:
@@ -29,8 +28,18 @@ const projects = [
       "GCP",
     ],
     image: Chameleon,
-    codeLink: "https://github.com/your-repo",
-    liveDemoLink: "https://yourprojectlink.com",
+    codeLink:
+      "https://github.com/Chameleon-company/MOP-Code/tree/master/next_webapp",
+    //liveDemoLink: "https://yourprojectlink.com",
+  },
+  {
+    title: "Supply Chain Optimization Platform - Scalable Inventory Management",
+    description:
+      "The Supply Chain Optimization Platform is a high-performance inventory management solution built to handle over 10,000 inventory transactions per hour within a microservices architecture. Developed in Python, containerized using Docker, and orchestrated through Kubernetes on Azure, this platform leverages Terraform for seamless infrastructure deployment. The solution reduced resource costs by 25%, demonstrating expertise in microservices, cloud scalability, and cost-efficient resource management.",
+    technologies: ["Python", "Docker", "Azure", "Kubernetes", "Terraform"],
+    image: SupplyChain,
+    codeLink: "https://github.com/thamashag/thamasha-galahena-sit722-part4",
+    //liveDemoLink: "https://yourprojectlink.com",
   },
 ];
 
@@ -83,26 +92,40 @@ const Projects = () => {
 
                 {/* Links */}
                 <div className="flex items-center gap-6">
-                  <a
-                    href={project.codeLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-black hover:text-[#4CC9FE] transition"
-                  >
-                    <FaGithub className="text-2xl lg:text-4xl" />{" "}
-                    {/* Default 2xl and lg 3xl */}
-                    Code
-                  </a>
-                  <a
-                    href={project.liveDemoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-black hover:text-[#4CC9FE] transition"
-                  >
-                    <FiExternalLink className="text-2xl lg:text-4xl" />{" "}
-                    {/* Default 2xl and lg 3xl */}
-                    Live demo
-                  </a>
+                  {project.designLink ? (
+                    <a
+                      href={project.designLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-black hover:text-[#4CC9FE] transition"
+                    >
+                      <FiExternalLink className="text-2xl lg:text-4xl" />
+                      View Design
+                    </a>
+                  ) : (
+                    <>
+                      <a
+                        href={project.codeLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-black hover:text-[#4CC9FE] transition"
+                      >
+                        <FaGithub className="text-2xl lg:text-4xl" />
+                        Code
+                      </a>
+                      {project.liveDemoLink && (
+                        <a
+                          href={project.liveDemoLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 text-black hover:text-[#4CC9FE] transition"
+                        >
+                          <FiExternalLink className="text-2xl lg:text-4xl" />
+                          Live demo
+                        </a>
+                      )}
+                    </>
+                  )}
                 </div>
               </div>
             </div>
