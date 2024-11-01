@@ -8,6 +8,8 @@ import ContactFooter from "./components/ContactFooter";
 import Blog from "./components/Blog";
 import BlogList from "./components/BlogList"; // Import the BlogList component
 import Recursion from "./articles/recursion";
+import Microservices from "./articles/microservices";
+import Kubernetes from "./articles/kubernetes";
 import HealthierLivingShowcase from "./components/HealthierLivingShowcase";
 
 const App = () => {
@@ -30,6 +32,8 @@ const App = () => {
         />
         <Route path="/blog-list" element={<BlogList />} />{" "}
         <Route path="articles/recursion" element={<Recursion />} />{" "}
+        <Route path="articles/microservices" element={<Microservices />} />{" "}
+        <Route path="articles/kubernetes" element={<Kubernetes />} />{" "}
         <Route
           path="work/healthierliving"
           element={<HealthierLivingShowcase />}

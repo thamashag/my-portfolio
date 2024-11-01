@@ -18,8 +18,8 @@ const RecursionArticle = () => {
   }, []);
 
   return (
-    <div className="w-full min-h-screen flex justify-center bg-[#F0F0F0] p-8 text-black">
-      <div className="w-full max-w-3xl bg-white p-8 shadow-lg rounded-lg">
+    <div className="w-full min-h-screen flex justify-center bg-[#F0F0F0] p-2 text-black">
+      <div className="w-full max-w-[900px] bg-white p-6 shadow-lg rounded-lg">
         <p className="text-gray-600 mb-2">
           Author: Thamasha Galahena | 7 min read
         </p>
