@@ -42,16 +42,16 @@ const MicroservicesArticle = () => {
         </h2>
         <ul className="list-disc ml-6 mb-6">
           <li>
-            **Scalability**: Services can be independently scaled to handle
-            varying loads, optimizing resources.
+            Scalability: Services can be independently scaled to handle varying
+            loads, optimizing resources.
           </li>
           <li>
-            **Flexibility**: Teams can choose the best technology stack for each
+            Flexibility: Teams can choose the best technology stack for each
             service, even mixing languages or frameworks.
           </li>
           <li>
-            **Resilience**: Since each service runs independently, failures in
-            one area don’t necessarily bring down the entire system.
+            Resilience: Since each service runs independently, failures in one
+            area don’t necessarily bring down the entire system.
           </li>
         </ul>
 
@@ -68,12 +68,12 @@ const MicroservicesArticle = () => {
             managing authentication, load balancing, and more.
           </li>
           <li>
-            **Service Registry**: Maintains a list of available services and
-            their locations to help services discover each other.
+            Service Registry: Maintains a list of available services and their
+            locations to help services discover each other.
           </li>
           <li>
-            **Database per Service**: Each service has its own database,
-            reducing dependencies and enabling autonomy.
+            Database per Service: Each service has its own database, reducing
+            dependencies and enabling autonomy.
           </li>
         </ul>
 

@@ -11,6 +11,7 @@ import Recursion from "./articles/recursion";
 import Microservices from "./articles/microservices";
 import Kubernetes from "./articles/kubernetes";
 import HealthierLivingShowcase from "./components/HealthierLivingShowcase";
+import Chatbot from "./components/Chatbot";
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="articles/recursion" element={<Recursion />} />{" "}
         <Route path="articles/microservices" element={<Microservices />} />{" "}
         <Route path="articles/kubernetes" element={<Kubernetes />} />{" "}
+        <Route path="/assistant" element={<Chatbot />} />{" "}
         <Route
           path="work/healthierliving"
           element={<HealthierLivingShowcase />}

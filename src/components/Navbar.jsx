@@ -40,6 +40,16 @@ const Navbar = () => {
         <li className="p-4">
           <Link
             smooth
+            to="/assistant"
+            className="hover:underline hover:underline-offset-4 transition duration-300"
+            onClick={handleNavToggle}
+          >
+            Assistant
+          </Link>
+        </li>
+        <li className="p-4">
+          <Link
+            smooth
             to="/#about"
             className="hover:underline hover:underline-offset-4 transition duration-300"
             onClick={handleNavToggle}
@@ -99,6 +109,16 @@ const Navbar = () => {
               onClick={handleNavToggle}
             >
               Home
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link
+              smooth
+              to="/assistant"
+              className="hover:underline hover:underline-offset-4 transition duration-300"
+              onClick={handleNavToggle}
+            >
+              Assistant
             </Link>
           </li>
           <li className="p-4">
