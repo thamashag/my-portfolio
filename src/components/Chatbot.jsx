@@ -58,6 +58,7 @@ const Chatbot = () => {
       - B.Sc. Computer Engineering - Polytechnic University of Turin, Italy
 
       **Experience:**
+      - Full Stack Developer at Tropical Coco (Feb 2024) - (Contract)
       - Full Stack Developer at Chameleon - Smarter World (2024)
       - IT Consultant at Studio Ass. Petrella Capitini Di Dio (2022)
       - IT Consultant at Banca Intesa Sanpaolo (2022)
@@ -105,12 +106,13 @@ const Chatbot = () => {
     const initialMessage = {
       role: "assistant",
       content: `
-        Hello! 👋 I'm your assistant trained on information about Thamasha Galahena (Tam). 
-        I can help answer any questions you have about them and their experience. 
+        Hello! 👋 I'm your assistant trained on information about Thamasha Galahena (Tam). I've been built using the ChatGPT API. 
+        I can help answer any questions you have about him and his work experience. 
         Here are some example questions you can ask me:
         - What is Thamasha's background?
         - Can you tell me about Thamasha's projects?
         - What technologies does Thamasha work with?
+        - Where did Thamasha study?
       `,
     };
     setMessages([initialMessage]);

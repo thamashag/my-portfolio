@@ -4,8 +4,18 @@ import { FiExternalLink } from "react-icons/fi";
 import HealthierLiving from "../assets/work1.png";
 import Chameleon from "../assets/work2.png";
 import SupplyChain from "../assets/work3.png";
+import TropicalCoco from "../assets/tropicalcoco.png";
 
 const projects = [
+  {
+    title: "Tropical Coco - Enhanced User Experience & Brand Visibility",
+    description:
+      "The Tropical Coco project involved designing and developing a user-friendly website for a Melbourne-based client, focusing on brand visibility and improved user experience. Built with HTML, CSS, and JavaScript, the website showcases Tropical Coco's products and services. Through SEO optimization, organic traffic increased by 35% in the first three months. Additionally, I created custom product packaging for their coconut drinks, strengthening the brand's identity and appeal in the market.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    image: TropicalCoco, // Replace with actual image variable if available
+    designLink: "https://tropicalcoco.com.au",
+    // liveDemoLink: "https://yourprojectlink.com",
+  },
   {
     title: "Healthier Living - Fitness App",
     description:
